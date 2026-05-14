@@ -952,6 +952,11 @@ a:hover {
     .section {
         padding: var(--spacing-md) 0;
     }
+
+    .hero {
+        align-items: normal;
+        padding-top: 100px;
+    }
 }
 
 /* Envelope Animation Screen */
