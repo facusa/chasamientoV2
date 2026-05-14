@@ -278,6 +278,7 @@ a:hover {
     background: radial-gradient(circle at center, #ffffff 0%, #fdfbf7 100%);
     background-size: cover;
     background-position: center;
+    background-color: var(--bg-main);
 }
 
 .hero-content {
