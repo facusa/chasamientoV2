@@ -913,7 +913,7 @@ a:hover {
 @media (max-width: 768px) {
     .bottom-nav {
         border-radius: 25px;
-        bottom: 25px;
+        bottom: 40px;
     }
 
     .bottom-nav ul {
