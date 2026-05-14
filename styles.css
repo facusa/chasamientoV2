@@ -1099,6 +1099,11 @@ body.locked {
     .envelope-screen {
         height: 105vh;
     }
+    
+    .detail-card,
+    .info-card {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 600px) {
