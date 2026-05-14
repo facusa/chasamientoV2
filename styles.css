@@ -957,7 +957,10 @@ a:hover {
     .hero {
         align-items: normal;
         padding-top: 100px;
+        height: 120vh;
     }
+    
+    
 }
 
 /* Envelope Animation Screen */
@@ -1090,6 +1093,12 @@ body.locked {
 .paper-content p {
     font-size: 1.1rem;
     color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .envelope-screen {
+        height: 120vh;
+    }
 }
 
 @media (max-width: 600px) {
