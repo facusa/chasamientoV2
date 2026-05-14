@@ -1097,7 +1097,9 @@ body.locked {
 
 @media (max-width: 768px) {
     .envelope-screen {
-        height: 130vh;
+        align-items: normal;
+        padding-top: 100px;
+        height: 120vh;
     }
     
     .detail-card,
