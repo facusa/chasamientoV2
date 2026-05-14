@@ -442,7 +442,7 @@ a:hover {
 
 .detail-card,
 .info-card {
-    padding: 50px 40px;
+    padding: 40px;
     border-radius: 20px;
     text-align: center;
     transition: var(--transition);
@@ -1101,7 +1101,8 @@ body.locked {
     }
     
     .detail-card,
-    .info-card {
+    .info-card,
+    .info-box {
         padding: 20px;
     }
 }
