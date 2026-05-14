@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiara & Martín - Casamiento</title>
+    <meta name="description" content="Nuestra boda será el 24 de Octubre de 2026. ¡Acompáñanos a celebrar!">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="locked">
+    <!-- Envelope Screen -->
+    <div id="envelope-screen" class="envelope-screen">
+        <div class="envelope-container" id="envelope-container">
+            <h2 class="envelope-text">¡Abrime!</h2>
+            <div class="envelope">
+                <div class="envelope-paper">
+                    <div class="paper-content">
+                        <h4>Chiara & Martín</h4>
+                        <p>24.10.2026</p>
+                    </div>
+                </div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-body"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Audio Player -->
+    <div class="audio-control" id="audioControl">
+        <i class="fas fa-music"></i>
+    </div>
+    <!-- Audio player configurado con el audio de WhatsApp -->
+    <audio id="bgMusic" loop>
+        <source src="audio-boda.mpeg" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="pre-title">SAVE THE DATE</h2>
+            <h1 class="main-title">Chiara & Martín</h1>
+            <p class="date">24 de Octubre de 2026</p>
+            <p class="hebrew-date">13 de Jeshván de 5787</p>
+
+            <h3 class="countdown-title">¡Cada vez falta menos!</h3>
+            <div class="countdown" id="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Días</small>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Horas</small>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Minutos</small>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Segundos</small>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Calendar & Location -->
+    <section class="section event-details" id="detalles">
+        <div class="container text-center">
+            <h2 class="section-title">Espacio Pilar 1</h2>
+            <p class="location-address">Chile 1963, CP: 1630<br>Pilar, Buenos Aires</p>
+            <div style="margin-top: 15px; margin-bottom: 40px;">
+                <a href="https://maps.google.com/?q=Espacio+Pilar+1,+Chile+1963,+1630+Pilar,+Provincia+de+Buenos+Aires"
+                    target="_blank" class="btn-outline">Cómo llegar</a>
+            </div>
+            <div class="transport-info mt-5">
+                <div class="info-box glass">
+                    <i class="fas fa-bus"></i>
+                    <h4>Buses</h4>
+                    <p>Recomendamos enfáticamente que vengan en los buses que pondremos a disposición desde CABA para
+                        mayor comodidad y seguridad de todos.</p>
+                </div>
+                <div class="info-box glass">
+                    <i class="fas fa-parking"></i>
+                    <h4>Estacionamiento</h4>
+                    <p>Para aquellos que decidan venir en auto, el predio cuenta con estacionamiento privado y seguridad
+                        toda la noche.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP & Music -->
+    <section class="section rsvp-section" id="rsvp">
+        <div class="container">
+            <h2 class="section-title">RSVP</h2>
+            <p class="text-center mb-4 text-light">Por favor, confirmanos tu asistencia.<br><strong
+                    class="highlight">Nota:</strong> No hay opción de +1. Cada invitado debe llenar este formulario
+                individualmente.</p>
+
+            <form class="rsvp-form glass" id="rsvpForm">
+                <div class="form-group">
+                    <label for="name">Nombre y Apellido *</label>
+                    <input type="text" id="name" required placeholder="Ej: Juan Pérez">
+                </div>
+
+                <div class="form-group">
+                    <label>¿Asistirás? *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="attendance" value="yes" required> Sí, ¡ahí estaré!</label>
+                        <label><input type="radio" name="attendance" value="no"> No podré asistir</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="food">Restricciones Alimentarias</label>
+                    <input type="text" id="food" placeholder="Celíaco, vegetariano, vegano, alergias...">
+                </div>
+
+                <div class="form-group">
+                    <label for="song">¿Qué canción no puede faltar?</label>
+                    <input type="text" id="song" placeholder="Artista y nombre de la canción">
+                </div>
+
+                <button type="submit" class="btn-primary w-100">Enviar Confirmación</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Regalos -->
+    <section class="section" id="regalos">
+        <div class="container">
+            <div class="info-card glass text-center" style="max-width: 800px; margin: 0 auto;">
+                <i class="fas fa-gift fa-3x mb-3"></i>
+                <h3>Regalos</h3>
+                <p>El mejor regalo es compartir este día tan especial con ustedes. Nuestro gran sueño es tener
+                    nuestra propia casa. Si desean acompañarnos en este proyecto, será muy especial para nosotros.
+                </p>
+                <div class="text-center">
+                    <button class="btn-outline mt-3" onclick="toggleGifts()">Ver Datos Bancarios</button>
+                </div>
+
+                <div class="gifts-details" id="giftsDetails">
+                    <div class="account-box">
+                        <h5>Dólares (Exterior - Zelle)</h5>
+                        <p>Email: chiaraymartin@email.com<br>Titular: Martin Apellido</p>
+                    </div>
+                    <div class="account-box">
+                        <h5>Euros (España - Europa)</h5>
+                        <p>CBU: 1111111111111111111111<br>Alias: CHIARA.MARTIN.EUR<br>Banco ICBC</p>
+                    </div>
+                    <div class="account-box">
+                        <h5>Dólares (USD - Argentina)</h5>
+                        <p>CBU: 1111111111111111111111<br>Alias: CHIARA.MARTIN.USD<br>Banco Santander</p>
+                    </div>
+                    <div class="account-box">
+                        <h5>Pesos Argentinos (ARS)</h5>
+                        <p>CBU: 0000000000000000000000<br>Alias: CHIARA.MARTIN.PESOS<br>Banco Galicia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress Code -->
+    <section class="section" id="dresscode">
+        <div class="container">
+            <div class="info-card glass text-center" style="max-width: 800px; margin: 0 auto;">
+                <i class="fas fa-user-tie fa-3x mb-3"></i>
+                <h3>Dress Code</h3>
+                <p><b style="margin-bottom: 5px;">Elegante / Black Tie</b></p>
+                <p>• Hay que estar a la altura de la ocasión
+                    <br>• Las zapatillas están invitadas post 12
+                </p>
+                <div class="text-center">
+                    <a href="https://www.pinterest.com" target="_blank" class="btn-outline mt-3">Inspirate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Timeline -->
+    <section class="section timeline-section" id="historia">
+        <div class="container">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content glass">
+                        <h3>2015</h3>
+                        <p>El día que nos conocimos. Todo empezó con una mirada en aquel bar de Buenos Aires.</p>
+                        <!-- Image placeholder as requested to add later -->
+                        <div class="img-placeholder">Foto 2015</div>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content glass">
+                        <h3>2018</h3>
+                        <p>Nuestro primer viaje juntos. Descubriendo el mundo y nuestro amor a la par.</p>
+                        <div class="img-placeholder">Foto 2018</div>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content glass">
+                        <h3>2022</h3>
+                        <p>Nos mudamos juntos. Empezando a construir nuestro propio hogar.</p>
+                        <div class="img-placeholder">Foto 2022</div>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content glass">
+                        <h3>Hoy</h3>
+                        <p>¡Dimos el gran paso! Comprometidos y listos para esta nueva aventura.</p>
+                        <div class="img-placeholder">Foto Hoy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- + Info -->
+    <section class="section guide-section" id="guia">
+        <div class="container">
+            <div class="social-info mt-5 glass p-4 rounded text-center">
+                <h3>#CHasamiento</h3>
+                <p><b>CH</b>iara + <b>CH</b>ino = <b>CH</b>asamiento
+                    <br><br>Etiquetanos en Instagram y usá nuestro hashtag y filtro oficial.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="btn-outline"><i class="fab fa-instagram"></i> @ChiaraYMartin2026</a>
+                    <a href="#" class="btn-outline"><i class="fas fa-magic"></i> Probar Filtro de IG</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Save The Date Video -->
+    <section class="section save-the-date">
+        <div class="container">
+            <h2 class="section-title">Save the Date</h2>
+            <div class="video-container glass">
+                <div class="img-placeholder video-placeholder">Video / Foto Cover</div>
+                <div class="play-btn"><i class="fas fa-play"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>¡Los esperamos para celebrar juntos!</p>
+        <h2>C & M</h2>
+    </footer>
+
+    <!-- Fixed Bottom Navigation -->
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="#inicio"><i class="fas fa-heart"></i> <span>C&M</span></a></li>
+            <li><a href="#detalles"><i class="fas fa-map-marker-alt"></i> <span>Dónde</span></a></li>
+            <li><a href="#rsvp"><i class="fas fa-envelope-open-text"></i> <span>RSVP</span></a></li>
+            <li><a href="#regalos"><i class="fas fa-gift"></i> <span>Regalos</span></a></li>
+            <li><a href="#dresscode"><i class="fas fa-user-tie"></i> <span>Dress Code</span></a></li>
+            <li><a href="#historia"><i class="fas fa-book-open"></i> <span>Nuestra Historia</span></a></li>
+            <li><a href="#guia"><i class="fas fa-plus-circle"></i> <span>+ Info</span></a></li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
